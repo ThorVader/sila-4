@@ -1380,6 +1380,37 @@ section,
     font-size: 18px;
   }
 }*/
+
+
+
+ .animated-text {
+  animation: floatText 6s ease-in-out infinite;
+}
+
+.animated-subtext {
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+@keyframes floatText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero {
   --default-color: #ffffff;
   --background-color: #000000;
@@ -1477,6 +1508,10 @@ section,
   .hero p {
     font-size: 18px;
   }
+
+
+ 
+
 }
 
 /*--------------------------------------------------------------
