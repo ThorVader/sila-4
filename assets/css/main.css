@@ -68,6 +68,37 @@
 :root {
   scroll-behavior: smooth;
 }
+
+
+/* Portfolio Carousel Image Styles */
+
+
+
+.portfolio-carousel .swiper-slide img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-carousel .swiper-slide:hover img {
+  transform: scale(1.03);
+}
+
+/* Optional: Make arrows visible and styled */
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--accent-color); /* use your red accent */
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 768px) {
+  .portfolio-carousel .swiper-slide img {
+    height: 200px;
+  }
+}
+
 /*--------------------------------------------------------------
 #Whatsapp Floating Button
 --------------------------------------------------------------*/

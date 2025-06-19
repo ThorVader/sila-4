@@ -735,379 +735,164 @@ as well as vehicle branding and marketing signage.
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>A sneak peek into some of our flagship work</p>
-      </div><!-- End Section Title -->
+      <section id="portfolio" class="portfolio section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>A sneak peek into some of our flagship work</p>
+  </div>
 
-      <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper portfolio-carousel init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 3000
+          },
+          "navigation": {
+            "nextEl": ".swiper-button-prev",
+            "prevEl": ".swiper-button-next"
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 10
+            },
+            "768": {
+              "slidesPerView": 2,
+              "spaceBetween": 20
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 30
+            }
+          }
+        }
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        
+      </script>
 
-          <!--<ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul> End Portfolio Filters -->
+      <div class="swiper-wrapper">
+        <!-- All 20 slides below -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <!--Porfolio Items-->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <!--<img src="./assets/img/fronts gallery/IMG-20250324-WA0002.jpg" class="img-fluid" alt="" loading="lazy">-->
-                <div class="portfolio-info">
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0002.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0003.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0003.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0007.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0007.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0015.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0015.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0019.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0019.jpg"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0023.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                  <!-- <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0023.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <!--   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0030.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0030.jpg"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0071.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0071.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                   <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item -->
-
-             <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0060.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0060.jpg"  data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0034.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                  <!-- <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0034.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                 <!--  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/WhatsApp Image 2025-03-23 at 22.22.23 (1).jpeg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>-->
-                  <a href="./assets/img/fronts gallery/WhatsApp Image 2025-03-23 at 22.22.23 (1).jpeg"  data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0023.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 <!--  <h4>Books 3</h4>
-                  <p></p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/IMG-20250324-WA0008.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0008.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/fronts gallery/" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/fronts gallery/IMG-20250324-WA0003.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/folder 2 (2)/WhatsApp Image 2025-03-23 at 22.24.14.jpeg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/folder 2 (2)/WhatsApp Image 2025-03-23 at 22.24.14.jpeg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0005.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0005.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item --
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0016.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0016.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div>-->
-            <!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0017.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0017.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0041.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0041.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item --
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0043.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0043.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div>-->
-            <!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0044.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0044.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0047.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0047.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0050.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0050.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0052.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0052.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0054.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0054.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0058.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0058.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item --
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0059.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0059.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div>
-            <!-- End Portfolio Item --
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0062.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0062.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div>-->
-            <!-- End Portfolio Item -->
-
-           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="./assets/img/attachments (1)/IMG-20250324-WA0064.jpg" class="img-fluid" alt="" loading="lazy">
-                <div class="portfolio-info">
-                 
-                  <a href="./assets/img/attachments (1)/IMG-20250324-WA0064.jpg"  data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>--
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-           
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-
-
-            <!-------------------------------------------------------------------------------------------------------->
-          
-
-
-          </div><!-- End Portfolio Container -->
-          
-
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0002.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/2.jpg" class="img-fluid rounded shadow-sm" alt="Project 1">
+          </a>
         </div>
-
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0003.jpg.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0003.jpg" class="img-fluid rounded shadow-sm" alt="Project 2">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0007.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0007.jpg" class="img-fluid rounded shadow-sm" alt="Project 3">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0015.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0015.jpg" class="img-fluid rounded shadow-sm" alt="Project 4">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0019.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0019.jpg" class="img-fluid rounded shadow-sm" alt="Project 5">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0023.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0023.jpg" class="img-fluid rounded shadow-sm" alt="Project 6">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0023.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0026.jpg" class="img-fluid rounded shadow-sm" alt="Project 6">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0030.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0030.jpg" class="img-fluid rounded shadow-sm" alt="Project 7">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0071.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0071.jpg" class="img-fluid rounded shadow-sm" alt="Project 8">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0060.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/1.jpg" class="img-fluid rounded shadow-sm" alt="Project 9">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0008.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0008.jpg" class="img-fluid rounded shadow-sm" alt="Project 10">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/fronts gallery/IMG-20250324-WA0034.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/IMG-20250324-WA0034.jpg" class="img-fluid rounded shadow-sm" alt="Project 11">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/folder 2 (2)/WhatsApp Image 2025-03-23 at 22.24.14.jpeg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/folder 2 (2)/WhatsApp Image 2025-03-23 at 22.24.14.jpeg" class="img-fluid rounded shadow-sm" alt="Project 12">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0005.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0065.jpg" class="img-fluid rounded shadow-sm" alt="Project 13">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0017.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0017.jpg" class="img-fluid rounded shadow-sm" alt="Project 14">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0041.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0041.jpg" class="img-fluid rounded shadow-sm" alt="Project 15">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0044.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0044.jpg" class="img-fluid rounded shadow-sm" alt="Project 16">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0047.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0047.jpg" class="img-fluid rounded shadow-sm" alt="Project 17">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0050.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0050.jpg" class="img-fluid rounded shadow-sm" alt="Project 18">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0052.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/attachments (1)/IMG-20250324-WA0052.jpg" class="img-fluid rounded shadow-sm" alt="Project 19">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="assets/img/attachments (1)/IMG-20250324-WA0054.jpg" class="glightbox" data-gallery="portfolio-gallery">
+            <img loading="lazy" src="assets/img/fronts gallery/3.jpeg" class="img-fluid rounded shadow-sm" alt="Project 20">
+          </a>
+        </div>
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <!-- Carousel Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
      
     <!-- Testimonials Section --
     <section id="testimonials" class="testimonials section">
@@ -1624,10 +1409,11 @@ as well as vehicle branding and marketing signage.
               <p><strong>Email:</strong> <span>info@siladigital.co.za</span></p>
             </div>
             <div class="social-links d-flex mt-4 justify-content-lg-start justify-content-center">
-              <a href="#"><i class="bi bi-twitter-x"></i></a>
-              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.tiktok.com/@siladigitalprinting?_t=ZM-8xKyUZozCIY&_r=1"><i class="bi bi-tiktok"></i></a>
+              
               <a href="https://www.instagram.com/siladigitalprinting/"><i class="bi bi-instagram"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="https://wa.me/27609925164"><i class="bi bi-whatsapp"></i></a>
+
             </div>
           </div>
     
